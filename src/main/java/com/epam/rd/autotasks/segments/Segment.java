@@ -22,7 +22,7 @@ class Segment {
     private Point start, end;
     public Segment(Point start, Point end) {
         if (start.getX() == end.getX() && start.getY() == end.getY()) {
-            throw new IllegalArgumentException("Degenerative segment: start and end points are the same.");
+            throw new IllegalArgumentException();
         }
         this.start = start;
         this.end = end;
